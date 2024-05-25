@@ -1,5 +1,3 @@
-
-
 const NewProductpage = () => {
 
     return (
