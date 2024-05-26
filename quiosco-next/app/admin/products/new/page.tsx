@@ -1,9 +1,11 @@
+import Heading from "@/components/ui/Heading"
+
 const NewProductpage = () => {
 
     return (
-        <div>
-            <h2>New</h2>
-        </div>
+        <>
+            <Heading>Nuevo Producto</Heading>
+        </>
     )
 }
 
