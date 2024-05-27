@@ -12,7 +12,7 @@ export async function completeOrder(formData: FormData) {
             },
             data: {
                 status: true,
-                oderReadyAt: new Date(Date.now())
+                orderReadyAt: new Date(Date.now())
             }
         })
         revalidatePath('/admin/orders')
