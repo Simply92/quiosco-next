@@ -42,3 +42,9 @@ model OrderProducts {
   product   Product @relation(fields: [productId], references: [id])
   quantity  Int
 }
+
+model Admin {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  password String
+}
