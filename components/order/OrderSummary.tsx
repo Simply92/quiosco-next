@@ -22,6 +22,7 @@ const OrderSummary = () => {
             result.error.issues.forEach(issue => {
                 toast.error(issue.message)
             })
+            return
         }
         const response = await createOrder(data)
         if (response?.errors) {
