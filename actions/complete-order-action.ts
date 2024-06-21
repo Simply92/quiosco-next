@@ -15,7 +15,7 @@ export async function completeOrder(formData: FormData) {
                 orderReadyAt: new Date(Date.now())
             }
         })
-        revalidatePath('/admin/orders')
+        revalidatePath('/admin/panel/orders')
     } catch (error) {
         console.log(error)
     }

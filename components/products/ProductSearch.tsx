@@ -17,7 +17,7 @@ export default function ProductSearch() {
             })
             return
         }
-        router.push(`/admin/products/search?search=${result.data.search}`)
+        router.push(`/admin/panel/products/search?search=${result.data.search}`)
     }
     return (
         <form

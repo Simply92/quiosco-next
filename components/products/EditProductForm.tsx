@@ -32,7 +32,7 @@ const EditProductForm = ({ children }: { children: React.ReactNode }) => {
             return
         }
         toast.success('Producto actualizado correctamente')
-        router.push('/admin/products')
+        router.push('/admin/panel/products')
     }
     return (
         <div className="bg-white mt-10 px-5 py-10 rounded-md shadow-md max-w-3xl mx-auto">

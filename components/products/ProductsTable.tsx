@@ -1,4 +1,4 @@
-import { ProductWhithCategory } from "@/app/admin/products/page"
+import { ProductWhithCategory } from "@/app/admin/panel/products/page"
 import { formatCurrency } from "@/src/utils"
 import Link from "next/link"
 
@@ -43,7 +43,7 @@ export default function ProductTable({ products }: ProductsTableProps) {
                                         </td>
                                         <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                                             <Link
-                                                href={`/admin/products/${product.id}/edit`}
+                                                href={`/admin/panel/products/${product.id}/edit`}
                                                 className="text-indigo-600 hover:text-indigo-800">
                                                 Editar <span className="sr-only">, {product.name}</span>
                                             </Link>

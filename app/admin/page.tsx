@@ -1,9 +1,10 @@
+import AdminForm from '@/components/admin/AdminForm'
 import React from 'react'
 
 const page = () => {
     return (
         <div>
-            <h1>admin</h1>
+            <AdminForm />
         </div>
     )
 }

@@ -6,7 +6,7 @@ import { OrderWithProducts } from "@/src/types"
 import useSWR from "swr"
 
 const OrdersPage = () => {
-    const url = '/admin/orders/api'
+    const url = '/admin/panel/orders/api'
     const fetcher = () => fetch(url).then(res => res.json()).then(data => data)
     const { data, error, isLoading } = useSWR<OrderWithProducts[]>(url, fetcher, {
         revalidateOnFocus: false,

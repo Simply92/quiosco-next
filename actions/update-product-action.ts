@@ -19,5 +19,5 @@ export async function updateProduct(data: unknown, id: number) {
         },
         data: result.data
     })
-    revalidatePath('/admin/products')
+    revalidatePath('/admin/panel/products')
 }
